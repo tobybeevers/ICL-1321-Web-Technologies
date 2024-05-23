@@ -1,20 +1,20 @@
+<!--Set up the Page and add Font Awesome to use Social Logos -->
+<!--Set Head Title to Broughton Life, and define EN and the default Language-->
+<!--Set Charset to UTF8 to allow all character sets-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/930fafc260.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/containers.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Broughton Life</title>
 </head>
 
-
 <body>
-  <!--Top Photo-->
-
-
-  <!-- NavBar-->
+<!-- NavBar Same Every Page -->
   <div class="navbar">
     <div class="container flex">
       
@@ -23,7 +23,7 @@
           <li><a href="./index.html" alt="Link to Home Page">Home</a></li>
           <li><a href="./about_broughton.html">About Broughton</a></li>
           <li><a href="./history_of_broughton.html">Broughton History</a></li>
-          <li><a href="./Broughton_WhatsOn.html">What's On</a></li>
+          <li><a href="./Broughton_whats_on.html">What's On</a></li>
           <li><a href="./community_links.html">Community Links</a></li>
         </ul>
       </nav>
@@ -32,6 +32,9 @@
 
 <!--Socials-->
 <section class="socials">
+  <h3 class="text-center my-1">
+    <i>Check Out our Social Channels for all the lastest News & Events</i>
+  </h3>
   <div class="container">
     <div class="grid grid-3 text-center my-4">
       <div>
@@ -55,7 +58,7 @@
   </div>
 </section>
 
-  <!-- Showcase -->
+<!-- Showcase -->
   <section class="showcase">
     <div class="container grid">
       <div class="showcase-text">
@@ -66,6 +69,7 @@
         <p><b>Community Walks:</b> Take in the fresh air and stunning scenery with our numerous walking trails, perfect for a leisurely stroll or a brisk hike.</p>
       </div>
 
+<!-- This form is designed to send an email but will need further back end code like PHP and alos SMTP set up etc before it will send anything-->
       <div class="showcase-form card">
         <h2>Got a Question?</h2>
         <form>
@@ -85,22 +89,22 @@
   </section>
 
 
-  <!--sponsors bottom bar -->
+<!-- Google Calendar is being used as a CMS, when events are added to the Google Account the calendar is updated via the Google Calenbdar API https://developers.google.com/calendar/api/guides/overview -->
+
   <section class="sponsors bg-primary py-2">
     <div class="container grid">
             <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&ctz=Europe%2FLondon&bgcolor=%23ffffff&showTz=0&showCalendars=0&showTabs=0&showPrint=0&hl=en_GB&src=NDdhYTYzNWQxYzc0NmU0MWY1NjYxYjg5MmEyMWVjNWUxZDZmMmI2YWZlOGIwMzJkODczNGYyZmY3OWI4ZGYxOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%231a7d90&color=%23A79B8E" 
       style="border:solid 3px #1A7D90" width="500" height="400" frameborder="0" scrolling="no"></iframe>
 
-      <div class="text-center">
-        <h2 class="md text-right"> What's On! </h2>
-        <h3 class="lead my-1 text-right"> Check Out our Calander for local events</h3>
+    <div class="text-right">
+        <h2 class="md"> What's On! </h2>
+        <h3 class="lead my-1"> Check Out our Calander for local events</h3>
+        <p> Have an upcoming event in Broughton? We want to hear from you!</p>
+        <p>Our "What's On" page is dedicated to showcasing the vibrant life of our community, and we rely on you to keep it exciting and up-to-date. Whether you're planning a community gathering, a cultural event, a sports meet, or any other activity, let us help you spread the word.</p>
+        <!-- This is a hard coded link to open the users mail client and send an emails to the defined email address -->
+        <a href="mailto:events@broughton-life.wales" class="btn btn-dark">Send Us Your Event!</a>
 
-        <p class="text-right"> Have an upcoming event in Broughton? We want to hear from you!</p>
-
-        <p class="text-right">Our "What's On" page is dedicated to showcasing the vibrant life of our community, and we rely on you to keep it exciting and up-to-date. Whether you're planning a community gathering, a cultural event, a sports meet, or any other activity, let us help you spread the word.</p>
-
-        <a href="LINK IN HERE" class="btn btn-dark ">Get In Touch</a>
-      </div>
+    </div>
       
     </div>
   </section>
@@ -131,16 +135,31 @@
   </div>
 </section>
 
-  <!--Footer-->
-  <footer class="footer bg-primary py-5">
-    <div class="container grid grid-3">
-      <div>
-        <h1>Broughton Life
-        </h1>
-        <p>Copyright &copy; 2024</p>
-      </div>
+<!--Footer Bar Same Every Page -->
+<footer class="footer bg-primary py-5">
+  <div class="container grid grid-3">
+    <div>
+      <h1>Broughton Life
+      </h1>
+      <p>Copyright &copy; 2024</p>
     </div>
-  </footer>
+    <nav>
+      <ul>
+          <li><a href="./index.html" alt="Link to Home Page">Home</a></li>
+          <li><a href="./about_broughton.html">About Broughton</a></li>
+          <li><a href="./history_of_broughton.html">Broughton History</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+          <li><a href="./Broughton_whats_on.html">What's On</a></li>
+          <li><a href="./community_links.html">Community Links</a></li>
+          <li><a href="./privacy_notice.html" target="blank">Broughton Life Privacy Notice</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
 </body>
 
 </html>

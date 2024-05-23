@@ -6,6 +6,18 @@
   padding: 0 40px
 }
 
+.map-container {
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 1px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
+}
+
+
 .card {
   background-color: #fff;
   color: #333;
@@ -50,8 +62,17 @@
 
 .bg-dark, 
 .btn-dark {
-  background-color: var(--dark-color);
+  background-color: var(--light-color);
   color: #fff;
+}
+
+.bg-primary a, 
+.btn-primary a,
+.bg-secondary a, 
+.btn-secondary a,
+.bg-dark a, 
+.btn-dark a {
+  color:#fff;
 }
 
 .bg-light, 

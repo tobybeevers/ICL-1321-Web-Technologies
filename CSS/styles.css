@@ -1,4 +1,4 @@
-/* This is myu styling sheet for the Broughton Life Site */
+/* This is my styling sheet for the Broughton Life Site */
 
 /*This is importing the Font called Play Regular 400 from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
@@ -171,6 +171,8 @@ img {
 
 
 /* SPONSORS */
+
+
 .sponsors .flex {
   flex-wrap: wrap;
 }
