@@ -1,0 +1,240 @@
+/* This is myu styling sheet for the Broughton Life Site */
+
+/*This is importing the Font called Play Regular 400 from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root {
+  --primary-color: #52acbd;
+  --secondary-color: #1A7D90;
+  --dark-color: #A0A0A0;
+  --light-color: #AEE3ED;
+}
+
+/* SET UP*/
+/* This is a reset that removes all teh default padding/margins etc*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* FORMATTING & STYLES*/
+/* Setting the font, color and line height defaults*/
+body{
+  font-family: 'Lato', sans-serif;
+  color: #000;
+  line-height: 1.6;
+}
+
+/*Removing the formating from the lists used in the menu bar (bullet points)*/
+ul{
+  list-style-type: none;
+}
+
+/* These are the links used in the menu bar, removing the Link Underlines and adding colour*/
+a {
+  text-decoration: none;
+  color: #1a7090;
+}
+
+h1 {
+  font-family: play;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  margin: 10px 0;
+}
+h2 {
+  font-family: play;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0px;
+  margin: 10px 0;
+}
+
+p {
+  font-family: play;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+/* Setting the image width to 100% to allow them to take 100% of the container they will be added to */
+img {
+  width: 100%
+}
+
+/*NAV BAR*/
+/* Create various classes for NavBar to hold the formatting of the Navigation Bar across all pages*/
+.navbar {
+  background-color: var(--secondary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+  margin: 0 5px;   
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* SHOWCASE/HERO */
+.showcase{
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1{
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'], 
+.showcase-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+
+
+/*SOCIALS*/
+
+.socials-heading {
+  /*max-width: 800px; */
+  margin: auto;
+  
+}
+.socials .grid h3 {
+  font-size: 35px;
+}
+.socials .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* CLIs*/
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+/* SPONSORS */
+.sponsors2 .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+
+/* SPONSORS */
+.sponsors .flex {
+  flex-wrap: wrap;
+}
+.sponsors .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+
+  transition: transform 0.2s ease-in;
+}
+.sponsors .card .h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.sponsors .card:hover {
+  transform: translateY(-15px);
+}
+.sponsors-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*TABLETS & UNDER*/
+@media(max-width: 768px){
+  .grid,
+  .showcase .grid,
+  .sponsors .grid,
+  .socials .grid,
+  .cli .grid {
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+/*MOBILE*/
+@media(max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex{
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
+
+  }
+
+}
