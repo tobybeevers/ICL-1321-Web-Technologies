@@ -15,22 +15,21 @@
 
 <body>
   <!-- Skip to content link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link" style="visibility:hidden" >Skip to main content</a>
 
 <!-- NavBar Same Every Page -->
-  <div class="navbar" aria-label="Navigation">
-    <div class="container flex">
-      
-      <nav role="navigation" aria-label="Main Navigation">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about_broughton.html">About Broughton</a></li>
-          <li><a href="./history_of_broughton.html">Broughton History</a></li>
-          <li><a href="./broughton_whats_on.html" aria-current="page">What's On</a></li>
-          <li><a href="./community_links.html">Community Links</a></li>
-        </ul>
-      </nav>
-    </div>
+<div class="navbar" aria-label="Navigation">
+  <div class="container flex">
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about_broughton.html">About Broughton</a></li>
+        <li><a href="./history_of_broughton.html">Broughton History</a></li>
+        <li><a href="./broughton_whats_on.html" aria-current="page">What's On</a></li>
+        <li><a href="./community_links.html">Community Links</a></li>
+      </ul>
+    </nav>
+  </div>
   </div>
 
 <!--Socials, the general login page link has been used as the social channels do not yet exist-->
@@ -67,8 +66,7 @@
         <p><b>Broughton Shopping Park:</b> Enjoy a day of shopping and dining at our modern retail park, featuring a variety of stores and eateries to suit all tastes.</p>
         <p><b>Community Walks:</b> Take in the fresh air and stunning scenery with our numerous walking trails, perfect for a leisurely stroll or a brisk hike.</p>
       </div>
-
-<!-- This form is designed to send an email but will need further back end code like PHP and alos SMTP set up etc before it will send anything-->
+      <!-- This form is designed to send an email but will need further back end code like PHP and alos SMTP set up etc before it will send anything-->
       <div class="showcase-form card">
         <h2>Got a Question?</h2>
         <form>
@@ -89,12 +87,10 @@
 </main>
 
 <!-- Google Calendar is being used as a CMS, when events are added to the Google Account the calendar is updated via the Google Calenbdar API https://developers.google.com/calendar/api/guides/overview -->
-
-  <section class="sponsors bg-primary py-2">
-    <div class="container grid">
-            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&ctz=Europe%2FLondon&bgcolor=%23ffffff&showTz=0&showCalendars=0&showTabs=0&showPrint=0&hl=en_GB&src=NDdhYTYzNWQxYzc0NmU0MWY1NjYxYjg5MmEyMWVjNWUxZDZmMmI2YWZlOGIwMzJkODczNGYyZmY3OWI4ZGYxOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%231a7d90&color=%23A79B8E" 
-      style="border:solid 3px #1A7D90" width="500" height="400" frameborder="0" scrolling="no"></iframe>
-
+<section class="sponsors bg-primary py-2">
+  <div class="container grid">
+    <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&ctz=Europe%2FLondon&bgcolor=%23ffffff&showTz=0&showCalendars=0&showTabs=0&showPrint=0&hl=en_GB&src=NDdhYTYzNWQxYzc0NmU0MWY1NjYxYjg5MmEyMWVjNWUxZDZmMmI2YWZlOGIwMzJkODczNGYyZmY3OWI4ZGYxOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%231a7d90&color=%23A79B8E" 
+    style="border:solid 3px #1A7D90" width="500" height="400" frameborder="0" scrolling="no"></iframe>
     <div class="text-right">
         <h2 class="md"> What's On! </h2>
         <h3 class="lead my-1"> Check Out our Calander for local events</h3>
@@ -102,29 +98,25 @@
         <p>Our "What's On" page is dedicated to showcasing the vibrant life of our community, and we rely on you to keep it exciting and up-to-date. Whether you're planning a community gathering, a cultural event, a sports meet, or any other activity, let us help you spread the word.</p>
         <!-- This is a hard coded link to open the users mail client and send an emails to the defined email address -->
         <a href="mailto:events@broughton-life.wales" class="btn btn-outline">Send Us Your Event!</a>
-
     </div>
-      
-    </div>
-  </section>
+  </div>
+</section>
 
  <!--sponsors -->
- <section class="sponsors">
-  <h3 class="text-center my-1 hc3">
-      Meet Our Sponsors, Local Businesses Supporting the Community
-    </h3>
+<section class="sponsors">
+  <h3 class="text-center my-1 hc3">Meet Our Sponsors, Local Businesses Supporting the Community</h3>
   <div class="container flex">
     <div class="card">
-    <h4>Meet</h4>
-    <img src="library/Broughton_shopping_park_logo.jpg"class="sponsors-img">
+      <h4>Meet</h4>
+      <img src="library/Broughton_shopping_park_logo.jpg"class="sponsors-img">
     </div>  
     <div class="card">
-    <h4>Meet</h4>
-    <img src="library/Broughton_shopping_park_logo.jpg"class="sponsors-img">
+      <h4>Meet</h4>
+      <img src="library/Broughton_shopping_park_logo.jpg"class="sponsors-img">
     </div> 
     <div class="card">
-    <h4>Meet</h4>
-    <img src="library/Broughton_shopping_park_logo.jpg"class="sponsors-img">
+      <h4>Meet</h4>
+      <img src="library/Broughton_shopping_park_logo.jpg"class="sponsors-img">
     </div> 
   </div>
 </section>
@@ -133,29 +125,27 @@
 <footer class="footer bg-primary py-5">
   <div class="container grid grid-3">
     <div>
-      <h1>Broughton Life
-      </h1>
+      <h1>Broughton Life</h1>
       <p>Copyright &copy; 2024</p>
     </div>
     <nav aria-label="Secondary Navigation">
       <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about_broughton.html">About Broughton</a></li>
-          <li><a href="./history_of_broughton.html">Broughton History</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about_broughton.html">About Broughton</a></li>
+        <li><a href="./history_of_broughton.html">Broughton History</a></li>
       </ul>
     </nav>
     <nav aria-label="Secondary Navigation">
       <ul>
-          <li><a href="./broughton_whats_on.html" aria-current="page">What's On</a></li>
-          <li><a href="./community_links.html">Community Links</a></li>
-          <li><a href="./privacy_notice.html" target="blank">Broughton Life Privacy Notice</a></li>
+        <li><a href="./broughton_whats_on.html" aria-current="page">What's On</a></li>
+        <li><a href="./community_links.html">Community Links</a></li>
+        <li><a href="./privacy_notice.html" target="blank">Broughton Life Privacy Notice</a></li>
       </ul>
     </nav>
   </div>
 </footer>
 
 </body>
-
 </html>
 
 

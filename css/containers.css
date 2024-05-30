@@ -1,4 +1,4 @@
-/* CONTAINER SETTINGS*/
+/* This is my container styling sheet for the Broughton Life Site */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -40,7 +40,6 @@
   overflow: auto;
   padding: 0 40px
 }
-
 
 .card {
   background-color: #fff;
@@ -191,7 +190,6 @@
   margin: 4rem;
 }
 
-
 /* PADDING*/
 .py-1{
   padding: 1rem 0;
@@ -223,5 +221,3 @@
 .p-5{
   padding: 4rem;
 }
-
-/* 01:21:24 */

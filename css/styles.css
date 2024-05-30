@@ -31,7 +31,6 @@ ul{
   list-style-type: none;
 }
 
-
 /* These are the links used in the menu bar, removing the Link Underlines and adding colour*/
 a {
   text-decoration: none;
@@ -181,10 +180,7 @@ img {
   outline: none;
 }
 
-
-
 /*SOCIALS*/
-
 .socials-heading {
   /*max-width: 800px; */
   margin: auto;
@@ -204,7 +200,6 @@ img {
   grid-template-rows: repeat(2, 1fr);
 }
 
-
 /* SPONSORS */
 .sponsors2 .grid {
   grid-template-columns: 4fr 3fr;
@@ -212,8 +207,6 @@ img {
 
 
 /* SPONSORS */
-
-
 .sponsors .flex {
   flex-wrap: wrap;
 }
@@ -239,8 +232,6 @@ img {
 .sponsors .card .sponsors-img {
   border: none;
 }
-
-
 
 /*TABLETS & UNDER*/
 @media(max-width: 768px){
