@@ -273,7 +273,7 @@ img {
     display: block; /* Make links take full width */
     padding: 15px 15; /* Add vertical padding */
     font-size: 14px; /* Decrease font size */
-    text-align: left; /* Center text */
+    text-align: center; /* Center text */
     margin: 0; /* Remove margin */
     border-bottom: 1px solid rgba(255,255,255,0.1); /* Add a separator */
   }
