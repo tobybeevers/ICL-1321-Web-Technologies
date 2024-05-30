@@ -259,23 +259,27 @@ img {
   }
 }
 
-
 @media(max-width: 500px) {
-  .navbar {
-    height: auto; /* Allow navbar height to adjust based on content */
-  }
   .navbar .flex {
     flex-direction: column;
-    align-items: center; /* Center items vertically */
+    align-items: left; /* Center items horizontally */
   }
   .navbar ul {
-    padding: 10px;
-    background-color: rgba(0,0,0,0.1);
+    padding: 0; /* Remove padding */
+    background-color: var(--secondary-color); /* Match navbar background color */
     width: 100%; /* Take full width */
-    text-align: center; /* Center text */
   }
   .navbar a {
-    margin: 5px; /* Add spacing between items */
-    font-size: 18px; /* Decrease font size */
+    display: block; /* Make links take full width */
+    padding: 15px 15; /* Add vertical padding */
+    font-size: 14px; /* Decrease font size */
+    text-align: left; /* Center text */
+    margin: 0; /* Remove margin */
+    border-bottom: 1px solid rgba(255,255,255,0.1); /* Add a separator */
+  }
+  .navbar a:last-child {
+    border-bottom: none; /* Remove separator for last link */
   }
 }
+
+
