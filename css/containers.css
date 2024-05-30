@@ -35,7 +35,6 @@
 
 .privacy-container {
   background-color: var(--light-color);
-  max-width: auto;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px
@@ -50,6 +49,7 @@
   margin: 10px;
 }
 
+/* BACKGROUNDS & BUTTONS*/
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -70,7 +70,6 @@
   transform: scale(0.98);
 }
 
-/* BACKGROUNDS & BUTTONS*/
 .bg-primary, 
 .btn-primary {
   background-color: var(--primary-color);
@@ -129,7 +128,6 @@
 .text-right {
   text-align: right;
 }
-
 
 .flex {
   display: flex;

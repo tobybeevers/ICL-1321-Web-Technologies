@@ -21,7 +21,7 @@
 /* FORMATTING & STYLES*/
 /* Setting the font, color and line height defaults*/
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Play', sans-serif;
   color: #000;
   line-height: 1.6;
 }
@@ -38,14 +38,14 @@ a {
 }
 
 h1 {
-  font-family: play;
+  font-family: Play;
   font-weight: 800;
   line-height: 1.5;
   letter-spacing: 0px;
   margin: 10px 0;
 }
 h2 {
-  font-family: play;
+  font-family: Play;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: 0px;
@@ -53,7 +53,7 @@ h2 {
 }
 
 h3 {
-  font-family: play;
+  font-family: Play;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: 0px;
@@ -62,7 +62,7 @@ h3 {
 }
 
 .hc3{ 
-  font-family: play;
+  font-family: Play;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: 0px;
@@ -72,7 +72,7 @@ h3 {
 }
 
 h4 {
-  font-family: play;
+  font-family: Play;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: 0px;
@@ -82,7 +82,7 @@ h4 {
 }
 
 p {
-  font-family: play;
+  font-family: Play;
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 1px;
@@ -91,7 +91,7 @@ p {
 }
 
 .p2 {
-  font-family: play;
+  font-family: Play;
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 1px;
@@ -125,7 +125,7 @@ img {
 }
 
 .navbar a:hover {
-  border-bottom: 2px #fff solid;
+  border-bottom: 2px var(--primary-color) solid;
 }
 
 .navbar .flex {
@@ -182,7 +182,6 @@ img {
 
 /*SOCIALS*/
 .socials-heading {
-  /*max-width: 800px; */
   margin: auto;
   
 }
@@ -191,7 +190,7 @@ img {
 }
 .socials .grid p {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* CLIs*/
@@ -241,7 +240,7 @@ img {
   .socials .grid,
   .cli .grid {
     grid-template-columns: 1fr;
-    grid-row: 1fr;
+    grid-template-rows: 1fr;
   }
   .showcase {
     height: auto;
@@ -260,17 +259,23 @@ img {
   }
 }
 
-/*MOBILE*/
+
 @media(max-width: 500px) {
   .navbar {
-    height: 110px;
+    height: auto; /* Allow navbar height to adjust based on content */
   }
-  .navbar .flex{
+  .navbar .flex {
     flex-direction: column;
+    align-items: center; /* Center items vertically */
   }
   .navbar ul {
     padding: 10px;
     background-color: rgba(0,0,0,0.1);
-
+    width: 100%; /* Take full width */
+    text-align: center; /* Center text */
+  }
+  .navbar a {
+    margin: 5px; /* Add spacing between items */
+    font-size: 18px; /* Decrease font size */
   }
 }
