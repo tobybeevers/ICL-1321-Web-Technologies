@@ -6,7 +6,7 @@
 :root {
   --primary-color: #52acbd;
   --secondary-color: #1A7D90;
-  --dark-color: #A0A0A0;
+  --dark-color: #000; /* #A0A0A0*/
   --light-color: #AEE3ED;
 }
 
@@ -43,6 +43,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0px;
   margin: 10px 0;
+  color: var(--dark-color);
 }
 h2 {
   font-family: Play;
@@ -50,6 +51,7 @@ h2 {
   line-height: 1.15;
   letter-spacing: 0px;
   margin: 10px 0;
+  color: var(--dark-color);
 }
 
 h3 {
@@ -58,6 +60,7 @@ h3 {
   line-height: 1.15;
   letter-spacing: 0px;
   margin: 10px 0;
+  color: var(--dark-color);
   
 }
 
@@ -87,6 +90,7 @@ p {
   line-height: 1.15;
   letter-spacing: 1px;
   margin: 10px 0;
+  color: var(--dark-color);
   
 }
 
