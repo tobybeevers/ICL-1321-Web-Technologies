@@ -31,6 +31,7 @@ ul{
   list-style-type: none;
 }
 
+
 /* These are the links used in the menu bar, removing the Link Underlines and adding colour*/
 a {
   text-decoration: none;
@@ -52,12 +53,52 @@ h2 {
   margin: 10px 0;
 }
 
+h3 {
+  font-family: play;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0px;
+  margin: 10px 0;
+  
+}
+
+.hc3{ 
+  font-family: play;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0px;
+  margin: 10px 0;
+  color: var(--secondary-color);
+  
+}
+
+h4 {
+  font-family: play;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0px;
+  margin: 10px 0;
+  color: var(--secondary-color);
+  
+}
+
 p {
   font-family: play;
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 1px;
   margin: 10px 0;
+  
+}
+
+.p2 {
+  font-family: play;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  color: var(--secondary-color);
+  
 }
 
 /* Setting the image width to 100% to allow them to take 100% of the container they will be added to */
@@ -192,7 +233,13 @@ img {
 .sponsors-img {
   max-width: 100%;
   height: auto;
+  border-radius: 2%;
+  border: 2px solid var(--dark-color);
 }
+.sponsors .card .sponsors-img {
+  border: none;
+}
+
 
 
 /*TABLETS & UNDER*/
@@ -208,17 +255,14 @@ img {
   .showcase {
     height: auto;
   }
-
   .showcase-text{
     text-align: center;
     margin-top: 40px;
   }
-
   .showcase-form {
     justify-self: center;
     margin: auto;
   }
-
   .cli .grid > *:first-child {
     grid-column: 1;
     grid-row: 1;
@@ -238,5 +282,4 @@ img {
     background-color: rgba(0,0,0,0.1);
 
   }
-
 }

@@ -14,12 +14,15 @@
 </head>
 
 <body>
+  <!-- Skip to content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- NavBar Same Every Page -->
   <div class="navbar">
     <div class="container flex">
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="./index.html" alt="Link to Home Page">Home</a></li>
+          <li><a href="./index.html" aria-current="page">Home</a></li>
           <li><a href="./about_broughton.html">About Broughton</a></li>
           <li><a href="./history_of_broughton.html">Broughton History</a></li>
           <li><a href="./broughton_whats_on.html">What's On</a></li>
@@ -30,6 +33,7 @@
   </div>
 
 <!-- Showcase -->
+<main id="main-content">
   <section class="showcase">
     <div class="container grid">
       <div class="showcase-text">
@@ -39,35 +43,57 @@
         <a href="./about_broughton.html" class="btn btn-outline"> Read More</a>
       </div>
       <div class="showcase-form card">
-        <img src="library/Broughton_Graffiti.jpg"class="sponsors-img" alt="Graffiti depicting the history of Broughton and the relationship to aircraft building">
+        <img src="library/Broughton_Graffiti.jpg" class="sponsors-img" alt="Graffiti depicting the history of Broughton and the relationship to aircraft building">
         <p class="text-right">Whether you're visiting for its historical sites, its scenic beauty, or its modern industrial achievements, Broughton promises a welcoming and enriching experience.</p>
         <p class="text-right">Join us in celebrating the past, present, and future of our beloved village.</p>
       </div>
     </div>
   </section>
+</main>
 
-<!--Socials-->
-  <section class="socials">
+<!--Socials, the general login page link has been used as the social channels do not yet exist-->
+  <div class="socials">
     <div class="container">
       <div class="grid grid-3 text-center my-4">
         <div>
-          <i class="fa-brands fa-square-facebook fa-8x" style="color: #1A7D90"></i>
+          <i class="fa-brands fa-square-facebook fa-8x" style="color: #1A7D90" aria-hidden="true"></i>
            <p class="text-secondary"></p>
-          <a href="https://en-gb.facebook.com/" style="color: #000" target="blank">Visit Our Facebook </a>
+          <a href="https://en-gb.facebook.com/" style="color: var(primary-color)" target="_blank" aria-label="Visit our Facebook page" title="Visit us on our Facebook page">Visit Our Facebook </a>
         </div>  
         <div> 
-          <i class="fa-brands fa-square-x-twitter fa-8x" style="color: #1A7D90"></i>
+          <i class="fa-brands fa-square-x-twitter fa-8x" style="color: #1A7D90" aria-hidden="true"></i>
           <p class="text-secondary"></p>
-          <a href="https://twitter.com/?lang=en" style="color: #000" target="blank">Visit Our Twitter X</a>  
+          <a href="https://twitter.com/?lang=en" style="color: var(primary-color)" target="_blank" aria-label="Visit our Twitter or X page" title="Visit us on our Twitter or X page">Visit Our Twitter X</a>  
         </div>
         <div> 
-          <i class="fa-brands fa-square-instagram fa-8x" style="color: #1A7D90"></i>
+          <i class="fa-brands fa-square-instagram fa-8x" style="color: #1A7D90" aria-hidden="true"></i>
           <p class="text-secondary"></p>
-          <a href="https://www.instagram.com/" style="color: #000" target="blank">Visit Our Instagram</a>  
+          <a href="https://www.instagram.com/" style="color: var(primary-color)" target="_blank" aria-label="Visit Our Instagram" title="Visit us on our Instagram">Visit Our Instagram</a>  
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+<!--sponsors -->
+<section class="sponsors">
+  <h3 class="text-center my-1 hc3">
+      Meet Our Sponsors, Local Businesses Supporting the Community
+    </h3>
+  <div class="container flex">
+    <div class="card">
+    <h4>Meet</h4>
+    <img src="library/Broughton_shopping_park_logo.jpg" class="sponsors-img" alt="Broughton Park Shopping Centre Logo" >
+    </div>  
+    <div class="card">
+    <h4>Meet</h4>
+    <img src="library/Broughton_shopping_park_logo.jpg" class="sponsors-img" alt="Broughton Park Shopping Centre Logo">
+    </div> 
+    <div class="card">
+    <h4>Meet</h4>
+    <img src="library/Broughton_shopping_park_logo.jpg" class="sponsors-img" alt="Broughton Park Shopping Centre Logo">
+    </div>
+  </div>
+</section>
 
 <!--Footer Bar Same Every Page -->
   <footer class="footer bg-primary py-5">
@@ -77,14 +103,14 @@
         </h1>
         <p>Copyright &copy; 2024</p>
       </div>
-      <nav>
+      <nav aria-label="Secondary Navigation">
         <ul>
-            <li><a href="./index.html" alt="Link to Home Page">Home</a></li>
+            <li><a href="./index.html" aria-current="page">Home</a></li>
             <li><a href="./about_broughton.html">About Broughton</a></li>
             <li><a href="./history_of_broughton.html">Broughton History</a></li>
         </ul>
       </nav>
-      <nav>
+      <nav aria-label="Secondary Navigation">
         <ul>
             <li><a href="./broughton_whats_on.html">What's On</a></li>
             <li><a href="./community_links.html">Community Links</a></li>
@@ -95,7 +121,3 @@
   </footer>
 </body>
 </html>
-
-
-
- 
