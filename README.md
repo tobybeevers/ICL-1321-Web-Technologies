@@ -20,4 +20,4 @@ We prepared design documentation which is on the DESIGNS.md file, these show wha
 
 *Task 2 – Website and Journal*
 
-We started to create our Website learning CSS and HTML5 along the way, we also completed a journal to record all of the development completed. The journal had to contain clear evidence of iterative development, validation and testing and match the state of the submitted website. My journal is also avaible in JOURNAL.md
+We started to create our Website learning CSS and HTML5 along the way, we also completed a journal to record all of the development completed. The journal had to contain clear evidence of iterative development, validation and testing and match the state of the submitted website. My journal is also avalaible in JOURNAL.md
